@@ -41,6 +41,6 @@ t('load absolute paths', function (t) {
   load(path.resolve('./example/samples/train.mp3')).then(testBuffer).then(() => t.end(), () => t.fail())
 })
 t('load remote files', function (t) {
-  load('https://file-examples.com/storage/fed4cf5e5466cf5da9e984e/2017/11/file_example_MP3_700KB.mp3')
+  load('https://github.com/kuraby1389/audio-loader/raw/master/example/samples/drumroll.mp3')
   .then(testBuffer).then(() => t.end(), (e) => t.fail(e))
 })
